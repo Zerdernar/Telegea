@@ -9,4 +9,6 @@
     <color name="colorBlueTelegram">#6897BB</color>
     <color name="colrTextTelegram">#3d3d3d</color>
     <color name="colorIconsTelegram">#c6565656</color>
+    <color name="colorBlack1Telegram">#212830</color>
+    <color name="colorBlack2Telegram">#141517</color>
 </resources>

@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
+    protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    ActionBar actionBar;
+    actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#879f38")))
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,9 +23,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="start"
         android:layout_width="300dp"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
         android:fitsSystemWindows="true">
 
         <fragment
