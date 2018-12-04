@@ -325,19 +325,37 @@
                         app:layout_constraintTop_toBottomOf="@+id/k9-1"
                         app:flexDirection="row">
 
-                    <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/night"/>
+                    <com.google.android.flexbox.FlexboxLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
 
-                    <TextView
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/night"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Night mode"
+                                android:textSize="16dp"
+                                android:layout_marginTop="3dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colrTextTelegram"/>
+
+                    </com.google.android.flexbox.FlexboxLayout>
+
+                    <com.google.android.flexbox.FlexboxLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Night mode"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                            android:layout_marginLeft="175dp"
+                            app:justifyContent="flex_end">
+
+                        <Switch
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                    </com.google.android.flexbox.FlexboxLayout>
 
                 </com.google.android.flexbox.FlexboxLayout>
 
