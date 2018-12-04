@@ -1,354 +1,357 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent" android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <com.google.android.flexbox.FlexboxLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:flexDirection="column">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:flexDirection="column">
 
             <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="155dp"
-                    android:background="@color/colorBlueTelegram"
-                    android:id="@+id/infopanel"
-                    app:layout_constraintLeft_toLeftOf="parent">
+                android:id="@+id/infopanel"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:background="@color/colorBlueTelegram"
+                app:layout_constraintLeft_toLeftOf="parent">
 
                 <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/cutmypic"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:id="@+id/face"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Дмитирй Афанасьев"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:id="@+id/name1"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/face"/>
+                    android:id="@+id/face"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/cutmypic"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="+7 (922) 556-26-36"
-                        android:textColor="@color/colorWhiteTelegram"
-                        android:textSize="18sp"
-                        android:layout_marginLeft="10dp"
-                        android:id="@+id/name"
-                        android:layout_marginBottom="5dp"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/name1"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Дмитирй Афанасьев"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/face" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="+7 (922) 556-26-36"
+                    android:textColor="@color/colorWhiteTelegram"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name1" />
 
                 <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/coil"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="15dp"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/coil"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
 
 
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintTop_toBottomOf="@id/infopanel">
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/k1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/group" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Новая группа"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/k2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k1">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/lock" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Новый секретный чат"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/k3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k2">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vol" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Создать канал"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <View
+                    android:id="@+id/k3-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    app:layout_constraintTop_toBottomOf="@id/infopanel">
-
-                <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k1"
-                        app:flexDirection="row">
-
-                    <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/group"/>
-
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                              android:text="Новая группа"
-                              android:textSize="16dp"
-                              android:layout_marginTop="3dp"
-                              android:textStyle="bold"
-                              android:textColor="@color/colrTextTelegram"/>
-
-                </com.google.android.flexbox.FlexboxLayout>
-
-                <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k2"
-                        app:layout_constraintTop_toBottomOf="@+id/k1"
-                        app:flexDirection="row">
-
-                    <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/lock"/>
-
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Новый секретный чат"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
-
-                </com.google.android.flexbox.FlexboxLayout>
-
-                <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k3"
-                        app:layout_constraintTop_toBottomOf="@+id/k2"
-                        app:flexDirection="row">
-
-                    <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/vol"/>
-
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Создать канал"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
-
-                </com.google.android.flexbox.FlexboxLayout>
-
-                <View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@color/colorGrey"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/k3-1"
-                        app:layout_constraintTop_toBottomOf="@id/k3">
+                    android:background="@color/colorGrey"
+                    app:layout_constraintTop_toBottomOf="@id/k3">
 
                 </View>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k4"
-                        app:layout_constraintTop_toBottomOf="@+id/k3-1"
-                        app:flexDirection="row">
+                    android:id="@+id/k4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k3-1">
 
                     <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/contac"/>
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/contac" />
 
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Контакты"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Контакты"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k5"
-                        app:layout_constraintTop_toBottomOf="@+id/k4"
-                        app:flexDirection="row">
+                    android:id="@+id/k5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k4">
 
                     <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/flag"/>
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/flag" />
 
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Избранное"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Избранное"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k6"
-                        app:layout_constraintTop_toBottomOf="@+id/k5"
-                        app:flexDirection="row">
+                    android:id="@+id/k6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k5">
 
                     <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/call"/>
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/call" />
 
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Звонки"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Звонки"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k7"
-                        app:layout_constraintTop_toBottomOf="@+id/k6"
-                        app:flexDirection="row">
+                    android:id="@+id/k7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k6">
 
                     <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/neww"/>
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/neww" />
 
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Пригласить друзей"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Пригласить друзей"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k8"
-                        app:layout_constraintTop_toBottomOf="@+id/k7"
-                        app:flexDirection="row">
+                    android:id="@+id/k8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k7">
 
                     <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/settings"/>
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/settings" />
 
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Настройки"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Настройки"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k9"
-                        app:layout_constraintTop_toBottomOf="@+id/k8"
-                        app:flexDirection="row">
+                    android:id="@+id/k9"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:layout_constraintTop_toBottomOf="@+id/k8">
 
                     <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/warn"/>
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/warn" />
 
                     <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Вопросы о Telegram"
-                            android:textSize="16dp"
-                            android:layout_marginTop="3dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/colrTextTelegram"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Вопросы о Telegram"
+                        android:textColor="@color/colrTextTelegram"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@color/colorGrey"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/k9-1"
-                        app:layout_constraintTop_toBottomOf="@id/k9">
+                    android:id="@+id/k9-1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey"
+                    app:layout_constraintTop_toBottomOf="@id/k9">
 
                 </View>
 
                 <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginHorizontal="7dp"
-                        android:layout_marginVertical="20dp"
-                        android:id="@+id/k10"
-                        app:justifyContent="space_between"
-                        app:layout_constraintTop_toBottomOf="@+id/k9-1"
-                        app:flexDirection="row">
+                    android:id="@+id/k10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="20dp"
+                    app:flexDirection="row"
+                    app:justifyContent="space_between"
+                    app:layout_constraintTop_toBottomOf="@+id/k9-1">
 
                     <com.google.android.flexbox.FlexboxLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
                         <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/night"/>
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/night" />
 
                         <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Night mode"
-                                android:textSize="16dp"
-                                android:layout_marginTop="3dp"
-                                android:textStyle="bold"
-                                android:textColor="@color/colrTextTelegram"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Night mode"
+                            android:textColor="@color/colrTextTelegram"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                     </com.google.android.flexbox.FlexboxLayout>
 
-                        <Switch
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"/>
+                    <Switch
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
 
                 </com.google.android.flexbox.FlexboxLayout>
 
